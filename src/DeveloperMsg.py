@@ -6,8 +6,9 @@ the possible values are:
 - testpmd: the user is asking about a specific testpmd command or how to use it.
 - general_app: the user is asking about general application using DPDK.
 - gateway: the user is asking about creating or improving gateway application.
+- IPSec: the user is asking about IPSec application.
 
-you should only return one of the values above.
+you should only return one of the values above. in this reply to this message only.
 """
 
 def get_dev_msg(tag, msg):

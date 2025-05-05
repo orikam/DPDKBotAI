@@ -29,7 +29,6 @@ class Bot:
             req['question'] = user_input
             self.client.add_user_message(str(req))
             response = self.client.query()
-            print("Assistant:", response, '\n--------\n')
             print("Assistant:", ast.literal_eval(response)['answer'])
             self.client.add_assistant_message(response)
             user_input = input("You: ")

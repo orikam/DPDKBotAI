@@ -14,7 +14,6 @@ class OpenAIClient:
         """
         Adds a user message to the list of messages.
         """
-        print(f"User message: {message}")
         self.messages.append({"role": "user", "content": message})
 
     def add_assistant_message(self, message):
