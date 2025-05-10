@@ -1,5 +1,6 @@
 from openai import OpenAI
 import SystemMsg
+from dotenv import load_dotenv
 
 
 class OpenAIClient:
@@ -7,6 +8,7 @@ class OpenAIClient:
         """
         Initializes the OpenAIClient with the API key from the environment and creates the OpenAI client.
         """
+        load_dotenv()
         self.client = OpenAI()
         self.messages = []
 
